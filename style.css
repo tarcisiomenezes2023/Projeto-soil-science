@@ -38,7 +38,6 @@ body {
     background-image: url('Imagem/dry-ground.jpg');
     background-position: center center;
     background-size: 5%;
-
 }
 
 main {
@@ -48,6 +47,10 @@ main {
     padding: 10px;
     box-shadow: 2px 2px 4px rgb(44, 44, 44);
     border-radius: 8px;
+}
+
+main > p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -60,3 +63,25 @@ footer > p {
     color: white;
     font-size: 1.5vw;
 }
+
+div.bloco {
+    display: inline-block;
+    height: 270px;
+    width: 470px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ div#q1 {
+    
+
+ }
+
+ div#q2 {
+    background-image: url('Imagem/Healthy-soil-Image.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+
+
