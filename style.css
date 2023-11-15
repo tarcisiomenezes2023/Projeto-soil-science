@@ -44,10 +44,10 @@ main {
     max-width: 1000px;
     background-color: white;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 2px 2px 4px rgb(44, 44, 44);
     border-radius: 8px;
-    
+    text-align: justify;
 }
 
 main > p {
@@ -74,14 +74,50 @@ footer > p {
 div.container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--color01);
+    border-radius: 8px;
+    height: 330px;
+
 }
 
-div.container p {
-    padding-top: 20px;
+div#text {
+    font-size: 1.25em;
+    line-height: 1.8em;
+    color: #5c2222;
+    font-weight: bolder;
+    text-decoration: none;
+    width: 280px;
+    padding: 20px;
 }
-    
 
+figure.Img1 {
+    position: relative;
+    overflow: hidden;
+}
+
+figure.Img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.Img1 figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(4, 4, 4, 0.414);
+    color: Yellow;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: opacity 2s;
+}
+
+figure.Img1:hover figcaption {
+    opacity: 1;
+}
 
 
 div.video01 {
@@ -98,6 +134,23 @@ div.video01 > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
+}
+
+@media screen and (max-width: 670px) {
+    div.container {
+        flex-direction: column;
+    }
+
+    div#text {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    div#text {
+        padding-right: 20px;
+    }
 }
     
 
