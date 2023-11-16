@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*
+#f4a460
+#bc8f8f
+#d2b48c
+#8b4513
+*/
+
+:root {
+    --color01: #d2b48c;
+    --color02: #f4a460;
+    --color03: #bc8f8f;
+    --color04: #8b4513;
+    --color05: #702828;
+}
+
+main h3 {
+    padding: 10px;
+    padding-top: 0px;
+}
+
+aside.list01 {
+    background-color: rgb(154, 227, 154);
+    overflow-x: hidden;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+aside > h3 {
+    background-image: linear-gradient(to right, var(--color01), transparent);
+    margin: 0px -20px 30px -20px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside.list02 {
+    background-color: rgb(154, 227, 154);
+    overflow-x: hidden;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+aside.list02 > h3 {
+    background-image: linear-gradient(to right, var(--color01), transparent);
+    margin: 0px -20px 30px -20px;
+    color: #702828;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 5%;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 566px) {
+div.grid-item {
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in;
+}
+
+div.grid-item:hover {
+    -webkit-transform: scale(1.6);
+}
+}
+
+@media screen and (max-width: 565px) {
+    div.grid-container {
+        background-color: black;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.grid-container img {
+        width: 100%;
+        height: 500%;
+        margin-top: 5%;
+    }
+
+}
+

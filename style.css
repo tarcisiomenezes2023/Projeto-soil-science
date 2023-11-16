@@ -23,6 +23,9 @@
 
 header {
     background-image: linear-gradient(to bottom, var(--color02), var(--color05));
+    background-image: url('Imagem/Soil\ Pit.jpg');
+    background-position-x: center;
+    background-size: cover;
     padding: 40px;
     text-align: center;
     min-height: 150px;
@@ -32,6 +35,14 @@ header h1 {
     font-size: 4em;
     color: yellow;
     padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header h2 {
+    font-size: 2em;
+    color: yellow;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav {
@@ -85,6 +96,20 @@ main > p {
     margin-top: 10px;
  }
 
+ main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color04);
+    background-color: var(--color01);
+    padding: 2px 6px;
+    transition-duration: 0.5s;
+ }
+
+ main a:hover {
+    text-decoration: underline;
+    color: var(white);
+ }
+
 footer {
     padding: 20px;
     text-align: center;
@@ -93,7 +118,7 @@ footer {
 
 footer > p {
     color: white;
-    font-size: 1.5vw;
+    font-size: 15px;
 }
 
 div.container {
@@ -204,8 +229,23 @@ div.video02 > iframe {
         flex-wrap: wrap;
         overflow: hidden;
     }
+
+    nav a {
+        font-size: 16px;
+        padding: 5px;
+        margin: 5px;
+        background-size: contain;
+    }
 }
 
-    
+    @media screen and (max-width: 300px) {
+        header h1 {
+            font-size: 55px;
+        }
+        header h2 {
+            font-size: 30px;
+        }
+
+    }
 
 
