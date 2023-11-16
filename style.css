@@ -34,6 +34,27 @@ header h1 {
     padding-bottom: 10px;
 }
 
+nav {
+    background-color: var(--color05);
+    padding: 15px;
+    box-shadow: 0px 7px 9px rgb(42, 41, 41);
+}
+
+nav a {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--color05);
+    color: yellow;
+}
+
 body {
     background-image: url('Imagem/dry-ground.jpg');
     background-position: center center;
@@ -44,7 +65,7 @@ main {
     max-width: 1000px;
     background-color: white;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 2px 2px 4px rgb(44, 44, 44);
     border-radius: 8px;
     text-align: justify;
@@ -57,7 +78,11 @@ main > p {
  main h2 {
     text-indent: 8px;
     font-size: 1.8em;
-    padding: 5px;
+    background-image: linear-gradient(to right, var(--color05), var(--color01));
+    color: yellow;
+    box-shadow: 1x 1px 1px yellow;
+    margin-bottom: 10px;
+    margin-top: 10px;
  }
 
 footer {
@@ -91,6 +116,7 @@ div#text {
     text-decoration: none;
     width: 280px;
     padding: 20px;
+    overflow: hidden;
 }
 
 figure.Img1 {
@@ -136,22 +162,50 @@ div.video01 > iframe {
     height: 90%;
 }
 
-@media screen and (max-width: 670px) {
+div.video02 {
+    background-color: darkolivegreen;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 48.9%;
+    position: relative;
+}
+
+div.video02 > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+@media screen and (max-width: 740px) {
     div.container {
         flex-direction: column;
     }
 
     div#text {
-        width: 95%;
-        padding: 10px;
+        line-height: normal;
+        width: auto;
+        height: auto;
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 450px) {
-    div#text {
-        padding-right: 20px;
+@media screen and (max-width: 515px) {
+    figcaption#tamanho {
+        font-size: 8px;
     }
 }
+
+@media screen and (max-width: 457px) {
+    nav {
+        height: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+}
+
     
 
 
