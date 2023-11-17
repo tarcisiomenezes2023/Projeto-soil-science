@@ -224,10 +224,11 @@ div.video02 > iframe {
 
 @media screen and (max-width: 457px) {
     nav {
-        height: 50px;
+        height: 40px;
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
+        padding: 0;
     }
 
     nav a {
@@ -238,6 +239,19 @@ div.video02 > iframe {
     }
 }
 
+@media screen and (max-width: 313px) {
+    nav {
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    main h2 {
+        font-size: 1.4em;
+        display: flex;
+        justify-content: center;
+    }
+}
     @media screen and (max-width: 300px) {
         header h1 {
             font-size: 55px;
@@ -245,7 +259,8 @@ div.video02 > iframe {
         header h2 {
             font-size: 30px;
         }
-
     }
+
+    
 
 

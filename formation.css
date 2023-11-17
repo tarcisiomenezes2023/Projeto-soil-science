@@ -33,7 +33,7 @@ aside.list01 {
 
 aside > h3 {
     background-image: linear-gradient(to right, var(--color01), transparent);
-    margin: 0px -20px 30px -20px;
+    
 }
 
 aside > ul {
@@ -54,7 +54,6 @@ aside.list02 {
 
 aside.list02 > h3 {
     background-image: linear-gradient(to right, var(--color01), transparent);
-    margin: 0px -20px 30px -20px;
     color: #702828;
     text-decoration: underline;
     font-weight: bolder;
@@ -107,6 +106,24 @@ div.grid-item:hover {
         height: 500%;
         margin-top: 5%;
     }
-
 }
+
+@media screen and (max-width: 696px) {
+    aside.list02 ul {
+        columns: unset;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    aside.list02 ul {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    aside.list01 ul {
+        columns: unset;
+    }
+}
+ 
 
